@@ -42,6 +42,10 @@ class Solution {
             {
                 count++;
             }
+            else
+            {
+                break;
+            }
         }
         
         return n-count;
