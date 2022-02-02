@@ -8,8 +8,8 @@ class Solution {
         
         for ( int index = 0 ;  index < arr.length ; index ++)
         {
-           int  element =  arr[index];
-            if (element == original)
+           //int  element =  ;
+            if (arr[index] == original)
             {
                
                   original = 2 * original  ;
