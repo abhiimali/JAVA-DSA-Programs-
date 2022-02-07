@@ -1,30 +1,44 @@
 class Solution {
     public char findTheDifference(String s, String t) {
      
-        int sumS = 0 ;
-        int sumT = 0 ;
+         // Using Bit Manipulation 
         
-        // sumS is Sum of String  S
-        // sumT Is Sum Of String T 
         
-        for (char ch: s.toCharArray()) {
+       
+        char diffChar = 0;
+		for(char c : (s+t).toCharArray()) diffChar ^=c;
+		return diffChar;
+        
+        
+        
+        
+        
+//         // using ASKII Values 
+        
+//         int sumS = 0 ;
+//         int sumT = 0 ;
+        
+//        // // sumS is Sum of String  S
+//        // // sumT Is Sum Of String T 
+        
+//         for (char ch: s.toCharArray()) {
 
-            sumS = sumS + (int) ch ;
+//             sumS = sumS + (int) ch ;
 
-        }
-        for (char cm : t.toCharArray()) {
+//         }
+//         for (char cm : t.toCharArray()) {
 
-            sumT = sumT + (int) cm ;
+//             sumT = sumT + (int) cm ;
 
-        }
+//         }
 
-        // Now Calculate Diff
+//        // // Now Calculate Diff
 
-        int ans = sumT - sumS ;
+//         int ans = sumT - sumS ;
 
-        char temp =  (char)ans ;
+//         char temp =  (char)ans ;
 
-    return  temp ;
+//          return  temp ;
         
         
     }
