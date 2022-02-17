@@ -16,3 +16,18 @@ class Solution {
         return maxdiff;
     }
 }
+
+/* 
+
+   3      6   9      1 
+   
+   pt1     pt2 
+   
+   Diff = pt2 - pt1 ;
+   
+   Then Maximum Of It Is The Differnce
+   
+   
+   
+   
+   */
