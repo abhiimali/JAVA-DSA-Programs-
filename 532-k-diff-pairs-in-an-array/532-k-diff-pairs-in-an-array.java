@@ -17,3 +17,6 @@ class Solution {
         
     }
 }
+
+
+// https://leetcode.com/problems/k-diff-pairs-in-an-array/discuss/298502/Java-6ms-Beats-98-Simple-2-Pointer-Approach
