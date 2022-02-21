@@ -1,7 +1,15 @@
 class Solution {
     public int majorityElement(int[] nums) {
         
-        int count = 0 ;
+        
+        Arrays.sort(nums);
+        return nums[nums.length/2];
+    }
+}
+
+/*
+
+int count = 0 ;
         int candidate = 0 ;
         
         for(int num : nums)
@@ -27,6 +35,6 @@ class Solution {
             
         }
          return candidate ;
-        
-    }
-}
+         
+         
+*/
