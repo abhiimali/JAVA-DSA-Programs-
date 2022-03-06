@@ -20,8 +20,9 @@ class Solution {
          while (node.next != null)
         {
              if ( node.val == node.next.val)
-            { node.next = node.next.next ;
-              }
+            { 
+                 node.next = node.next.next ;
+             }
             else
             {
                 node = node.next ;
@@ -33,3 +34,26 @@ class Solution {
     }  
    
 }
+/*
+
+for unsorted  :) 
+
+
+sort list then remove
+
+how to sort LL :) 
+
+
+1. Find Mid 
+
+2. Merge Sort 
+
+3. Merge Two LinkLists 
+
+
+
+
+
+*/
+
+// kunal kushwaha 
