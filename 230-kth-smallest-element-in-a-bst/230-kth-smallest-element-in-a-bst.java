@@ -21,7 +21,7 @@ class Solution {
         
         inorder(root, result);
         
-        Collections.sort(result);
+        // Collections.sort(result);
         
         
         return result.get(k-1);
