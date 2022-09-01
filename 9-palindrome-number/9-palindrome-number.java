@@ -1,29 +1,36 @@
 class Solution {
-    public boolean isPalindrome(int a) {
+    public boolean isPalindrome(int x) {
         
         
+        int temp =  x ;
         
-        int temp = a ;
-
-        int r , sum = 0 ;
-
-
-        while ( a > 0 )
+        int number = 0 , remainder  ;
+        
+        while(x > 0)
+            
         {
-             r  = a % 10 ;
-             sum = (sum *10) + r ;
-             a =a/10 ;
-
+            
+            
+            remainder  = x % 10 ;
+            
+            number = (number * 10 ) + remainder ;
+            
+            x = x  / 10 ;
+            
+            
         }
-        if (temp==sum)
+        
+        if ( number == temp )
         {
-
-           /// System.out.println(" Palindrome ");
             return true ;
+            
         }
         else
         {
-            return false ;
+            return false ; 
         }
+        
+       // boolean ans  = (number==temp) ? true : false ;
+       //  return ans  ;   
     }
 }
