@@ -1,21 +1,18 @@
 class Solution {
     public int missingNumber(int[] nums) {
         
-       
-        /// search for element case 1 N CASE 2
-        
         Arrays.sort(nums);
-
-        for (int index = 0 ; index < nums.length ; index++)
+       // int ans = nums.length;
+        for (int i=0 ; i < nums.length ; i++)
         {
-            if (nums[index] != index)
+            if(i!=nums[i])
             {
-                    return  index ;
+                return i ; 
             }
+            
+            
         }
-
-        return  nums.length ;
-        
-    }
      
+        return nums.length ;
+    }
 }
