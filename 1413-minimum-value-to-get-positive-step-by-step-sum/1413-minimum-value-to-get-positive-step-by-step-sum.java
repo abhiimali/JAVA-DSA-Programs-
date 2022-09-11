@@ -14,13 +14,13 @@ class Solution {
             
             
         }
-        if(minValue < 0  )
-        {
-            int a = Math.abs(minValue);
-            return a+1;
-        }
+        // if(minValue < 0  )
+        // {
+        //     int a = Math.abs(minValue);
+        //     return a+1;
+        // }
         
-        return 1 ;
+        return 1 - minValue;
         
         
     }
