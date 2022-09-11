@@ -21,6 +21,6 @@ class Solution {
             
         }
         
-        return chalk.length - 1 ;
+        return 0 ;
     }
 }
