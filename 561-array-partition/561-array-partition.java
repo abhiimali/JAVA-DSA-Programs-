@@ -12,7 +12,7 @@ class Solution {
             // 122566
             
             
-            sum+=Math.min(nums[i],nums[i+1]);
+            sum = sum + nums[i];
             
             
             
