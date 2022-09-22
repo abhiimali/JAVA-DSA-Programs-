@@ -12,8 +12,8 @@ class Solution {
         Arrays.sort(temp);
        // ArrayList<Integer> ans = new ArrayList<>();
         int count =0;
-        System.out.println(Arrays.toString(temp));
-        System.out.println(Arrays.toString(heights));
+       // System.out.println(Arrays.toString(temp));
+        //System.out.println(Arrays.toString(heights));
         for(int i=0 ; i < temp.length ; i++)
             
         {
