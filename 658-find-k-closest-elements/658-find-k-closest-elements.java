@@ -1,17 +1,22 @@
 class Solution {
-    public List<Integer> findClosestElements(int[] arr, int k, int x) {
-        int lo = 0, hi = arr.length - k;
-        while (lo < hi) {
-            int mid = (lo + hi) / 2;
-            if (x - arr[mid] > arr[mid+k] - x)
-                lo = mid + 1;
-            else
-                hi = mid;
+    public List<Integer> findClosestElements(int[] a, int k, int x) {
+        List<Integer> nm=new ArrayList<>();
+        int i=0,j=a.length-1;
+        while(j-i+1>k)
+        {
+            if(Math.abs(x-a[i])>Math.abs(x-a[j]))
+            {
+                i++;
+            }
+            else if(Math.abs(x-a[i])<=Math.abs(x-a[j]))
+            {
+                j--;
+            }
         }
-        List<Integer> result = new ArrayList<>();
-        for(int i=lo;i<lo+k;i++){
-            result.add(arr[i]);          
+        for(int p=i;p<=j;p++)
+        {
+            nm.add(a[p]);
         }
-        return result;
+        return nm;
     }
 }
