@@ -1,13 +1,11 @@
 class Solution {
     public int minimumOperations(int[] nums) {
-        Arrays.sort(nums);
-        int ops = 0;
-        if (nums[0] > 0) ops ++;
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] > nums[i - 1]) {
-                ops++;
-            }
-        }
-        return ops;
+        
+            HashSet<Integer> set=new HashSet();  
+            for(int i=0; i < nums.length ;i++)
+                    
+            { if(nums[i] > 0 ) set.add(nums[i]);}
+            
+            return set.size();
     }
 }
