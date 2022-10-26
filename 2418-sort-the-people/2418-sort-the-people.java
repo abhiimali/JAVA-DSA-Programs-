@@ -14,18 +14,18 @@ class Solution {
         Arrays.sort(heights);
         
         String[] ans = new String[n] ;
-         for(int i= 0 ; i < n ;i ++)
+         for(int i= n - 1 ; i >= 0 ;i -- )
         {
-            ans[i] = map.get(heights[i]);
+            ans[n - 1 - i] = map.get(heights[i]);
             
         }
         
-        List<String> list = Arrays.asList(ans);
-        Collections.reverse(list);
-      //  String[] reversedArray = list.toArray(ans);
+//         List<String> list = Arrays.asList(ans);
+//         Collections.reverse(list);
+//       //  String[] reversedArray = list.toArray(ans);
 
-        return list.toArray(ans); 
+//         return list.toArray(ans); 
         
-        
+        return ans ;
     }
 }
