@@ -2,9 +2,9 @@ class Solution {
     public int[] rearrangeArray(int[] nums) {
         
         int n = nums.length ;
-        int[] p = new int[n];
+        //int[] p = new int[n];
         
-        int[] m = new int[n];
+       // int[] m = new int[n];
         //count
         int indexP = 0;
         
