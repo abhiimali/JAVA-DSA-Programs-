@@ -4,14 +4,18 @@ class Solution {
         
         for(String s : operations)
         {
-            if (s.contains("++"))
-            {
-                e = e + 1 ;
-            }
-            else
-            {
-                e = e - 1; 
-            }
+            // if (s.contains("++"))
+            // {
+            //     e = e + 1 ;
+            // }
+            // else
+            // {
+            //     e = e - 1; 
+            // }
+            
+            // aproch  2 : 
+            
+            e += s.charAt(1) == '+' ? 1 : -1;
         }
         
         
