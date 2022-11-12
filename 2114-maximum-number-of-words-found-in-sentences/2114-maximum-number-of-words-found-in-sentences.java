@@ -5,9 +5,15 @@ class Solution {
         
         for(String s : sentences)
         {
-            String[] str = s.split(" ");
+             // Appr 1  : 
             
-            maximum =  Math.max(maximum,str.length);
+            // String[] str = s.split(" ");
+            
+           // maximum =  Math.max(maximum,str.length); 
+            
+            // approch  2 : 
+            
+            if(s.split(" ").length>maximum)maximum=s.split(" ").length;
             
         }
         
