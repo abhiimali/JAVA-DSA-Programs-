@@ -17,24 +17,19 @@ class Solution {
     public boolean isUnivalTree(TreeNode root) {
         int n = root.val;
         
-       return preOder(root,n);
+       return travers(root,n);
         
     }
-    static boolean preOder(TreeNode root, int n)
+    static boolean travers(TreeNode root, int n)
     {   
         if(root==null) { return true ; }
         if(root.val != n)
         {
             return  false ;
-        }
-//         if(root.left == null && root.right==null)
-//         {
-//             return true ;
-//         }
-        
-        return preOder(root.left ,n) && preOder(root.right , n);
-        
-        
+        }       
+    
+        return travers(root.left ,n) && travers(root.right , n);
+              
     }
     
     
