@@ -16,7 +16,7 @@ class Solution {
             {
                 if(i==0 || j == 0)
                 {
-                    dp[m][n] = 0 ;
+                    dp[i][j] = 0 ;
                 }
             }
         }
