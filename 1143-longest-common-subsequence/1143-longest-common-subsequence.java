@@ -9,17 +9,17 @@ class Solution {
         
         // base condition initilased with 0 
         
-        for(int i=0 ; i < m + 1 ; i++)
-        {
-            for(int j=0 ; j < n + 1 ; j++)
+//         for(int i=0 ; i < m + 1 ; i++)
+//         {
+//             for(int j=0 ; j < n + 1 ; j++)
                 
-            {
-                if(i==0 || j == 0)
-                {
-                    dp[i][j] = 0 ;
-                }
-            }
-        }
+//             {
+//                 if(i==0 || j == 0)
+//                 {
+//                     dp[i][j] = 0 ;
+//                 }
+//             }
+//         }
         
         for(int i=1; i < m +1 ; i++)
         {
