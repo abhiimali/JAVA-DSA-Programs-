@@ -5,8 +5,8 @@ class Solution {
         
         
         int n = s.length();
-        
-        for(int i=0 ; i < n ;)
+        int i=0 ;
+        while(i < n )
             
         {
             if(s.charAt(i)=='X')
