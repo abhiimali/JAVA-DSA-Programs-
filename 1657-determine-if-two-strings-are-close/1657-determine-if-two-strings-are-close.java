@@ -1,20 +1,29 @@
 class Solution {
     public boolean closeStrings(String word1, String word2) {
-        if(word1.length() != word2.length()) return false;
-int[] w1 = new int[26];
-int[] w2 = new int[26];
-for(char c : word1.toCharArray()) w1[c-'a']++;
-for(char c : word2.toCharArray()) w2[c-'a']++;
-for(int i = 0 ; i < 26 ; i++) if((w1[i] == 0 && w2[i] != 0) || (w1[i] != 0 && w2[i] == 0)) return false;
-Map<Integer,Integer> map = new HashMap<>();
-for( int i : w1) if(i > 0) map.put(i , map.getOrDefault(i , 0) + 1);
-for( int i : w2) {
-if( i > 0){
-if(!map.containsKey(i)) return false;
-map.put(i , map.get(i) - 1);
-if(map.get(i) == 0) map.remove(i);
-}
-}
-return map.size() == 0;
+        
+        
+        if(word1.length() != word2.length())
+        {
+            return false ;
+        }
+        int[] f1 = new int[26];
+        int[] f2 = new int[26];
+        
+        boolean[] v1 = new boolean[26];
+        boolean[] v2 = new boolean[26];
+        
+        for(int i=0; i<word1.length();i++)
+        {
+            f1[word1.charAt(i)-'a']++;
+            f2[word2.charAt(i)-'a']++;
+            v1[word1.charAt(i)-'a'] = true ;
+            v2[word2.charAt(i)-'a'] = true ;
+            
+        }
+        
+        Arrays.sort(f1);
+        Arrays.sort(f2);
+        
+        return Arrays.equals(f1,f2) && Arrays.equals(v1,v2);
     }
 }
